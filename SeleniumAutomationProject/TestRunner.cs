@@ -1,12 +1,11 @@
-﻿using System;
-
-namespace SeleniumAutomationProject
+using System;
+using Xunit;
+public class TestRunner
 {
-    class Program
+
+    [Fact]
+    public void test()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        Assert.True(false,"i have no idea what is failed");
     }
 }
