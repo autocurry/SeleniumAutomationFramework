@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/SeleniumAutomationProject/SeleniumAutomationProject.csproj"
+                "${workspaceFolder}/SeleniumAutomationProject.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
