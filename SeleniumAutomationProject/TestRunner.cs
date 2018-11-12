@@ -1,11 +1,17 @@
-using System;
 using Xunit;
-public class TestRunner
-{
+using System;
 
-    [Fact]
-    public void test()
+public class TestRunner : IDisposable
+{
+    public TestRunner ()
     {
-        Assert.True(false,"i have no idea what is failed");
+        Console.WriteLine("inside the setup");
+       
+    }
+
+    public void Dispose()
+    {
+        Console.Write("inside the teardown");
     }
 }
+
