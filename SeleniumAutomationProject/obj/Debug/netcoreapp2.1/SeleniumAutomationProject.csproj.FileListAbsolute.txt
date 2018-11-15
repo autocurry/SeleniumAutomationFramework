@@ -12,3 +12,4 @@
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/SeleniumAutomationProject/obj/Debug/netcoreapp2.1/SeleniumAutomationProject.AssemblyInfo.cs
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/SeleniumAutomationProject/obj/Debug/netcoreapp2.1/SeleniumAutomationProject.dll
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/SeleniumAutomationProject/obj/Debug/netcoreapp2.1/SeleniumAutomationProject.pdb
+/home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/SeleniumAutomationProject/bin/Debug/netcoreapp2.1/SeleniumAutomationProject.dll.config

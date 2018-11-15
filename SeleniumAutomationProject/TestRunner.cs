@@ -23,7 +23,7 @@ public class TestRunner : IDisposable
     {
     
     Console.WriteLine("inside the first test");
-    _driver.Navigate().GoToUrl("https://www.automationpractice.com");
+    _driver.Navigate().GoToUrl("http://automationpractice.com/index.php");
     
     }
 }
