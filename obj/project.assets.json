@@ -5752,11 +5752,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/SeleniumAutomationProject/SeleniumAutomationProject.csproj",
+      "projectUniqueName": "/home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/SeleniumAutomationProject.csproj",
       "projectName": "SeleniumAutomationProject",
-      "projectPath": "/home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/SeleniumAutomationProject/SeleniumAutomationProject.csproj",
+      "projectPath": "/home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/SeleniumAutomationProject.csproj",
       "packagesPath": "/home/sandeep/.nuget/packages/",
-      "outputPath": "/home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/SeleniumAutomationProject/obj/",
+      "outputPath": "/home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

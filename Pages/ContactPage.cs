@@ -1,11 +1,9 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support;
 
-public class ContactPage : BasePage{
+public class ContactPage{
 IWebDriver _driver;
-public ContactPage:BasePage(_driver){
-    
-}
+
 
 By _ContactEmail =  By.CssSelector("input[id='email']");
 
