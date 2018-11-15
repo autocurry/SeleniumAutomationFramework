@@ -8,7 +8,7 @@ ContactPage _contactPage = new ContactPage();
     public void SendAValidMessage()
     {
 
-        Assert.True(true,"first test case");
+        Assert.True(false,"failing the test");
         //_contactPage.ContactEmail.SendKeys("EmailAddress");
 
 
