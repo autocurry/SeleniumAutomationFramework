@@ -1,6 +1,6 @@
 # SeleniumAutomationFramework
 
-[![Build Status](https://travis-ci.org/sandybegn/SeleniumAutomationFramework.svg?branch=master)]
+![Build Status](https://travis-ci.org/sandybegn/SeleniumAutomationFramework.svg?branch=master)
 
 
 Selenium Automation testing using VS Code and XUnit
