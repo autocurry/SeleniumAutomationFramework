@@ -8,7 +8,7 @@ ContactPage _contactPage = new ContactPage();
     public void SendAValidMessage()
     {
 
-        Assert.True(false,"failing the test");
+        Assert.True(false,"failing the test intentionally");
         //_contactPage.ContactEmail.SendKeys("EmailAddress");
 
 
