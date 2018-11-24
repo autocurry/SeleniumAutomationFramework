@@ -4,16 +4,19 @@ using Xunit;
 public class ContactShould:BasePage{
 
 
-    public ContactShould()
+    public ContactShould():base()
     {
-
+       Console.WriteLine("inside the contact should constructor");
     }
 
-ContactPage _contactPage = new ContactPage();
+    ContactPage _contactPage = new ContactPage();
+
     [Fact]
     public void SendAValidMessage()
-    {        
-        _contactPage.ContactEmail.SendKeys("EmailAddress");
+    {      
+          
+        Console.WriteLine(BaseUrl+"value of base url");
+        Assert.True(true, "test passed");
 
     }
 }

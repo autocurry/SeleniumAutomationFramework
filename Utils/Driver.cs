@@ -1,15 +1,15 @@
 using OpenQA.Selenium;
 
-public  class Driver:BasePage{
+public  class Driver{
 
-private browserType = config["browser"];
+private string browserType;
 private IWebDriver _driver;
 public IWebDriver MyProperty
 {
     get { 
         if(_driver == null)
         {
-            _driver = CreateNewDriverInstance(string browserType);
+            //_driver = CreateNewDriverInstance();
         }
         return _driver;
         }

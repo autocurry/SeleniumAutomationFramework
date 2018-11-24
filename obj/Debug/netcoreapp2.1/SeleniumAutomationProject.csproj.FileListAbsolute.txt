@@ -22,7 +22,6 @@
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll
-/home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/SeleniumAutomationProject.dll.config
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/SeleniumAutomationProject.deps.json
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/SeleniumAutomationProject.runtimeconfig.json
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/SeleniumAutomationProject.runtimeconfig.dev.json
