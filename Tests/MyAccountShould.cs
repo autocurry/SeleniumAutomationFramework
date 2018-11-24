@@ -6,20 +6,23 @@ using OpenQA.Selenium.Support;
 
 public class MyAccountShould:BasePage,IDisposable{
 
-   
+   HomePage _homePage;
+   MyAccountPage _myAccountPage;
+   RegisterPage _registerPage;
     public MyAccountShould():base()
     {
         
 
     }
-    HomePage _homePage = new HomePage();
+    
 
     [Fact]
-    public void SendAValidMessage()
+    public void RegisterANewUser()
     {    
-       var result =_homePage.OpenMyAccount();
-       
-        Assert.True(result);
+       _myAccountPage =_homePage.OpenMyAccount();
+        _registerPage = _myAccountPage._clickRegisterLink();
+       _registerPage.Register();
+        Assert.True(true);
     }
     
 
