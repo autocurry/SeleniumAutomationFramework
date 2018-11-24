@@ -1,26 +1,24 @@
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
-public  class Driver{
+public static class Driver{
 
-private string browserType;
-private IWebDriver _driver;
-public IWebDriver MyProperty
-{
-    get { 
+public static IWebDriver _driver{
+    get
+    {
         if(_driver == null)
         {
-            //_driver = CreateNewDriverInstance();
+            _driver = new ChromeDriver("Driver/chromedriver");
         }
         return _driver;
-        }
-    set { _driver = value;}
+    }
+    set
+    {
+       
+        
+    }
 }
 
-private void CreateNewDriverInstance()
-{
-
-
-}
 
 
 }

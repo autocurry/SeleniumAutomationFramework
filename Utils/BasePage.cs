@@ -7,10 +7,8 @@ public class BasePage{
     public string BaseUrl { get; set; }
     public  IConfiguration _configuration {get;set;}
         public  BasePage()
-        {
-     
-            var directorypath ="${workspaceFolder}";
-
+        {     
+            
          var builder = new ConfigurationBuilder()
                          .AddJsonFile("appsettings.json", optional:true, reloadOnChange:true)
                             .SetBasePath(Directory.GetCurrentDirectory())
@@ -18,8 +16,15 @@ public class BasePage{
 
             _configuration = builder.Build();
 
-            BaseUrl = _configuration["Message"];
+            BaseUrl = _configuration["BaseUrl"];
+            LaunchBrowser();
       
         }
+
+        public void LaunchBrowser()
+        {
+            Driver._driver.Navigate().GoToUrl(BaseUrl);
+        }
+
   
 }
