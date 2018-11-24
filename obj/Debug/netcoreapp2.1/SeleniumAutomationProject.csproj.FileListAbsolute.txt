@@ -27,3 +27,4 @@
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/SeleniumAutomationProject.runtimeconfig.dev.json
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/SeleniumAutomationProject.dll
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/SeleniumAutomationProject.pdb
+/home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/appsettings.json

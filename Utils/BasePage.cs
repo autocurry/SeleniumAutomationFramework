@@ -9,6 +9,8 @@ public class BasePage{
         public  BasePage()
         {
      
+            var directorypath ="${workspaceFolder}";
+
          var builder = new ConfigurationBuilder()
                          .AddJsonFile("appsettings.json", optional:true, reloadOnChange:true)
                             .SetBasePath(Directory.GetCurrentDirectory())
@@ -16,7 +18,7 @@ public class BasePage{
 
             _configuration = builder.Build();
 
-            BaseUrl = _configuration["BaseUrl"];
+            BaseUrl = _configuration["Message"];
       
         }
   

@@ -6,7 +6,8 @@ public class ContactShould:BasePage{
 
     public ContactShould():base()
     {
-       Console.WriteLine("inside the contact should constructor");
+        Console.WriteLine("value now"+BaseUrl);
+       Console.WriteLine("inside the contact should constructor1");
     }
 
     ContactPage _contactPage = new ContactPage();
