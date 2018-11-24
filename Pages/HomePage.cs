@@ -3,7 +3,7 @@ using OpenQA.Selenium.Support;
 
 public class HomePage{
 
-    By MyAccountLink = By.CssSelector("a[titile='My Account']");
+    By MyAccountLink = By.CssSelector("a[title='My Account']");
 
     public bool OpenMyAccount()
     {

@@ -1,11 +1,13 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support;
+using OpenQA.Selenium.Chrome;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 public class BasePage{
 
     public string BaseUrl { get; set; }
     public  IConfiguration _configuration {get;set;}
+        IWebDriver _driver;
         public  BasePage()
         {     
             
@@ -23,7 +25,10 @@ public class BasePage{
 
         public void LaunchBrowser()
         {
-            Driver._driver.Navigate().GoToUrl(BaseUrl);
+           _driver = new ChromeDriver(Directory.GetCurrentDirectory()+"/Driver/");
+           Driver._driver = _driver;
+           Driver._driver.Navigate().GoToUrl(BaseUrl);
+            
         }
 
   

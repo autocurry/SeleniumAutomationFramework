@@ -6,6 +6,9 @@
       <Content Include="appsettings.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content> 
+      <Content Include="Driver/*">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content> 
 
 
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0"/>
