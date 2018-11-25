@@ -3,13 +3,13 @@ using OpenQA.Selenium.Support;
 
 public class HomePage{
 
-  MyAccount _myAccountPage ;
+  MyAccountPage _myAccountPage ;
     By MyAccountLink = By.CssSelector("a[title='My Account']");
 
-    public MyAccount OpenMyAccount()
+    public MyAccountPage OpenMyAccount()
     {
         Driver._driver.FindElement(MyAccountLink).Click();
-        _myAccountPage = new MyAccount();
+        _myAccountPage = new MyAccountPage();
         return _myAccountPage;
     }
 

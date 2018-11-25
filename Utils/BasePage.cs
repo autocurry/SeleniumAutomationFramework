@@ -3,6 +3,7 @@ using OpenQA.Selenium.Support;
 using OpenQA.Selenium.Chrome;
 using Microsoft.Extensions.Configuration;
 using System.IO;
+using System;
 public class BasePage{
 
     public string BaseUrl { get; set; }
@@ -25,8 +26,11 @@ public class BasePage{
 
         public void LaunchBrowser()
         {
-           _driver = new ChromeDriver(Directory.GetCurrentDirectory()+"/Driver/");
+            ChromeOptions __options = new ChromeOptions();
+            __options.AddArgument("--start-maximized");
+           _driver = new ChromeDriver(Directory.GetCurrentDirectory()+"/Driver/",__options);
            Driver._driver = _driver;
+           Driver._driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
            Driver._driver.Navigate().GoToUrl(BaseUrl);
             
         }

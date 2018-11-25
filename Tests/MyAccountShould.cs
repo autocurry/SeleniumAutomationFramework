@@ -13,16 +13,16 @@ public class MyAccountShould:BasePage,IDisposable{
     {
         
 
-    }
-    
+    }    
 
     [Fact]
     public void RegisterANewUser()
     {    
+        _homePage = new HomePage();
        _myAccountPage =_homePage.OpenMyAccount();
         _registerPage = _myAccountPage._clickRegisterLink();
-       _registerPage.Register();
-        Assert.True(true);
+      var result = _registerPage.Register();
+        Assert.True(result);
     }
     
 
