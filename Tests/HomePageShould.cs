@@ -21,6 +21,14 @@ public void LoadCorrectly()
      _homePage.Verify();
 }
 
+[Fact]
+public void EnsuretheShoppingPriceAndCheckoutPrice()
+{
+     _homePage = new HomePage();
+     
+
+}
+
 public void Dispose()
     {
         Driver._driver.Quit();

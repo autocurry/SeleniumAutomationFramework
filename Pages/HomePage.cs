@@ -29,4 +29,11 @@ public class HomePage{
        
     }
 
+    public void SearchAnItemByName(string name)
+    {
+        Driver._driver.FindElement(SearchBox).SendKeys(name+Keys.Return);
+        WaitForElementDisplayed(ItemMagicMouse);
+
+    }
+
 }
