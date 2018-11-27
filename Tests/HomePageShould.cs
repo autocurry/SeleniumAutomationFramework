@@ -6,11 +6,11 @@ using System;
 public class HomePageShould:BasePage,IDisposable{
 
 HomePage _homePage;
-IWebDriver _driver ;
+
 
 public HomePageShould():base()
     {
-        
+        Console.WriteLine("inside constuctor of home page should");
 
     } 
 
@@ -26,11 +26,11 @@ public void EnsuretheShoppingPriceAndCheckoutPrice()
 {
      _homePage = new HomePage();
      
-
 }
 
 public void Dispose()
     {
+        Console.WriteLine("inside dispose of homepageshould");
         Driver._driver.Quit();
     }
 

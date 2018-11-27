@@ -2,7 +2,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support;
 using System.Collections.Generic;
 
-public class HomePage{
+public class HomePage:BaseUtil{
 
   MyAccountPage _myAccountPage ;
     By MyAccountLink = By.CssSelector("a[title='My Account']");
@@ -18,22 +18,21 @@ public class HomePage{
 
     public MyAccountPage OpenMyAccount()
     {
-        Driver._driver.FindElement(MyAccountLink).Click();
+        SingleClick(MyAccountLink);
         _myAccountPage = new MyAccountPage();
         return _myAccountPage;
     }
 
     public void Verify()
     {        
-        Driver._driver.FindElement(HomeMenu).Click();
+        SingleClick(HomeMenu);
        
     }
 
     public void SearchAnItemByName(string name)
-    {
-        Driver._driver.FindElement(SearchBox).SendKeys(name+Keys.Return);
+    {        
+        TypeAndReturn(SearchBox,name);
         WaitForElementDisplayed(ItemMagicMouse);
-
     }
 
 }

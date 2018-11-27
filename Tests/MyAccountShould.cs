@@ -3,7 +3,6 @@ using Xunit;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support;
 
-
 public class MyAccountShould:BasePage,IDisposable{
 
    HomePage _homePage;
@@ -12,7 +11,7 @@ public class MyAccountShould:BasePage,IDisposable{
     public MyAccountShould():base()
     {
         
-
+        Console.WriteLine("inside constructor of my account should");
     }    
 
     [Fact]
@@ -20,14 +19,15 @@ public class MyAccountShould:BasePage,IDisposable{
     {    
         _homePage = new HomePage();
        _myAccountPage =_homePage.OpenMyAccount();
-        _registerPage = _myAccountPage._clickRegisterLink();
-      var result = _registerPage.Register();
-        Assert.True(result);
+        _registerPage = _myAccountPage.SelectRegisterLink();
+         _registerPage.Register();
+        
     }
     
 
     public void Dispose()
     {
+        Console.WriteLine("inside dispose of my account should");
         Driver._driver.Quit();
     }
 }
