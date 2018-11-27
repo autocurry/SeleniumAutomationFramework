@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support;
-
+[Collection("Our Test Collection #1")]
 public class MyAccountShould:BasePage,IDisposable{
 
    HomePage _homePage;
@@ -28,6 +28,6 @@ public class MyAccountShould:BasePage,IDisposable{
     public void Dispose()
     {
         Console.WriteLine("inside dispose of my account should");
-        Driver._driver.Quit();
+        Driver._driver.Close();
     }
 }

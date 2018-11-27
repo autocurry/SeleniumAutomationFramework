@@ -3,6 +3,7 @@ using  OpenQA.Selenium.Chrome;
 using Xunit;
 using System.IO;
 using System;
+[Collection("Our Test Collection #1")]
 public class HomePageShould:BasePage,IDisposable{
 
 HomePage _homePage;
@@ -15,6 +16,7 @@ public HomePageShould():base()
     } 
 
 [Fact]
+
 public void LoadCorrectly()
 {
     _homePage = new HomePage();
@@ -22,6 +24,7 @@ public void LoadCorrectly()
 }
 
 [Fact]
+[Trait("name","checkout")]
 public void EnsuretheShoppingPriceAndCheckoutPrice()
 {
      _homePage = new HomePage();
@@ -31,7 +34,7 @@ public void EnsuretheShoppingPriceAndCheckoutPrice()
 public void Dispose()
     {
         Console.WriteLine("inside dispose of homepageshould");
-        Driver._driver.Quit();
+        Driver._driver.Close();
     }
 
 }
