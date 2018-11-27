@@ -11,7 +11,7 @@ public class MyAccountShould:BasePage,IDisposable{
     public MyAccountShould():base()
     {
         
-        Console.WriteLine("inside constructor of my account should");
+        
     }    
 
     [Fact]
@@ -27,7 +27,7 @@ public class MyAccountShould:BasePage,IDisposable{
 
     public void Dispose()
     {
-        Console.WriteLine("inside dispose of my account should");
+        
         Driver._driver.Close();
     }
 }

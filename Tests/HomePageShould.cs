@@ -11,7 +11,7 @@ HomePage _homePage;
 
 public HomePageShould():base()
     {
-        Console.WriteLine("inside constuctor of home page should");
+        
 
     } 
 
@@ -33,7 +33,7 @@ public void EnsuretheShoppingPriceAndCheckoutPrice()
 
 public void Dispose()
     {
-        Console.WriteLine("inside dispose of homepageshould");
+        
         Driver._driver.Close();
     }
 
