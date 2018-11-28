@@ -29,3 +29,4 @@
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/SeleniumAutomationProject.pdb
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/appsettings.json
 /home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/Driver/chromedriver
+/home/sandeep/Desktop/SeleniumAutomation/SeleniumAutomationFramework/bin/Debug/netcoreapp2.1/xunit.runner.json

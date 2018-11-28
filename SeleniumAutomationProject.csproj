@@ -9,6 +9,11 @@
       <Content Include="Driver/*">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content> 
+       <Content Include="xunit.runner.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+
+      
 
 
     <PackageReference Include="Selenium.WebDriver" Version="3.141.0"/>

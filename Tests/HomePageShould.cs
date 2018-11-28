@@ -3,7 +3,7 @@ using  OpenQA.Selenium.Chrome;
 using Xunit;
 using System.IO;
 using System;
-[Collection("Our Test Collection #1")]
+//[Collection("Our Test Collection #1")]
 public class HomePageShould:BasePage,IDisposable{
 
 HomePage _homePage;
