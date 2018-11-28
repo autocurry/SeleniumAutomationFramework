@@ -9,12 +9,12 @@ public class HomePage:BaseUtil{
     By HomeMenu = By.LinkText("Home");
     By SearchBox = By.CssSelector("input[value='Search Products']");
     By CartItemCount = By.CssSelector(".count");
-    By ItemMagicMouse = By.CssSelector("a[href*='magic-mouse']");
+    By ItemMagicMouse = By.CssSelector("a[title*='magic-mouse']");
     By CurrentPrice = By.CssSelector(".currentprice");
     By AddToCartButton = By.CssSelector("input[value='Add To Cart']");
     By LoadingImage = By.CssSelector("img[alt='loading']");
 
-
+    
 
     public MyAccountPage OpenMyAccount()
     {
@@ -32,7 +32,25 @@ public class HomePage:BaseUtil{
     public void SearchAnItemByName(string name)
     {        
         TypeAndReturn(SearchBox,name);
-        WaitForElementDisplayed(ItemMagicMouse);
+        WaitForElementDisplayed(AddToCartButton);
+    }
+
+     public bool AddItemToCart()
+    {    
+        bool result = false;    
+      var initialCartItemCount = GetCartItemCount();
+      SingleClick(AddToCartButton);
+       var finalItemCount = GetCartItemCount();
+       bool check = (finalItemCount==(initialCartItemCount+1));
+
+       result = check?result=true:result=false;
+
+       return result;
+    }
+
+    public string GetCartItemCount()
+    {
+        return GetText(CartItemCount);
     }
 
 }

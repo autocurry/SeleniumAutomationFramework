@@ -31,10 +31,17 @@ public class BaseUtil
          element.SendKeys(text);
     }
 
-      public void SingleClick(By by)
+    public void SingleClick(By by)
     {         
          IWebElement element = WaitForElementDisplayed(by);
          element?.Click();
+    }
+
+  
+
+     public void CheckItemExists(string itemname)
+    {         
+        
     }
 
 }

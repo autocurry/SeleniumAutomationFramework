@@ -3,7 +3,7 @@ using  OpenQA.Selenium.Chrome;
 using Xunit;
 using System.IO;
 using System;
-//[Collection("Our Test Collection #1")]
+
 public class HomePageShould:BasePage,IDisposable{
 
 HomePage _homePage;
@@ -28,13 +28,19 @@ public void LoadCorrectly()
 public void EnsuretheShoppingPriceAndCheckoutPrice()
 {
      _homePage = new HomePage();
+     _homePage.SearchAnItemByName("Magic Mouse");
+      Assert.True(_homePage.AddItemToCart());
+      
+
+     
+
      
 }
 
 public void Dispose()
     {
         
-        Driver._driver.Close();
+        Driver._driver.Quit();
     }
 
 }
