@@ -1,46 +1,48 @@
 using OpenQA.Selenium;
-using  OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Chrome;
 using Xunit;
 using System.IO;
 using System;
 
-public class HomePageShould:BasePage,IDisposable{
+public class HomePageShould : BasePage, IDisposable
+{
 
-HomePage _homePage;
+    HomePage _homePage;
 
 
-public HomePageShould():base()
+    public HomePageShould() : base()
+    {
+        BasePage.InitBrowser();
+
+    }
+
+    [Fact]
+
+    public void LoadCorrectly()
     {
         
+        _homePage = new HomePage();
+        _homePage.Verify();
+    }
 
-    } 
-
-[Fact]
-
-public void LoadCorrectly()
-{
-    _homePage = new HomePage();
-     _homePage.Verify();
-}
-
-[Fact]
-[Trait("name","checkout")]
-public void EnsuretheShoppingPriceAndCheckoutPrice()
-{
-     _homePage = new HomePage();
-     _homePage.SearchAnItemByName("Magic Mouse");
-      Assert.True(_homePage.AddItemToCart());
-      
-
-     
-
-     
-}
-
-public void Dispose()
+    [Fact]
+    [Trait("name", "checkout")]
+    public void EnsuretheShoppingPriceAndCheckoutPrice()
     {
-        
-        Driver._driver.Quit();
+        _homePage = new HomePage();
+        _homePage.SearchAnItemByName("Magic Mouse");
+        Assert.True(_homePage.AddItemToCart());
+
+
+
+
+
+    }
+
+    public void Dispose()
+    {
+
+        BasePage.CloseAllBrowsers();
     }
 
 }

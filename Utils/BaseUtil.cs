@@ -9,7 +9,7 @@ public class BaseUtil
 
     public IWebElement WaitForElementDisplayed(By by)
     {         
-         var wait = new WebDriverWait(Driver._driver, TimeSpan.FromSeconds(timeoutInSeconds));
+         var wait = new WebDriverWait(BasePage._driver, TimeSpan.FromSeconds(timeoutInSeconds));
          return wait.Until(drv => drv.FindElement(by));
     }
 
