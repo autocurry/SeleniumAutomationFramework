@@ -30,13 +30,9 @@ public class HomePageShould : BasePage, IDisposable
     {
         _homePage = new HomePage();
         _homePage.SearchAnItemByName("Magic Mouse");
-        Assert.True(_homePage.AddItemToCart());
-
-
-
-
-
-    }
+       _homePage.AddItemToCart();       
+       
+           }
 
     public void Dispose()
     {

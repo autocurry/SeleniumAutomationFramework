@@ -18,7 +18,7 @@ public class MyAccountShould : BasePage, IDisposable
     [Fact]
     public void RegisterANewUser()
     {
-        BasePage.InitBrowser();
+        
         _homePage = new HomePage();
         _myAccountPage = _homePage.OpenMyAccount();
         _registerPage = _myAccountPage.SelectRegisterLink();
