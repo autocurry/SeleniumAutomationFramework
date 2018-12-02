@@ -26,7 +26,6 @@ public class HomePageShould : BasePage, IDisposable
     }
 
     [Fact]
-    [Trait("name", "checkout")]
     public void EnsuretheShoppingPriceAndCheckoutPrice()
     {
         _homePage = new HomePage();
