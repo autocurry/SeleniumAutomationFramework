@@ -21,16 +21,16 @@ public class HomePageShould : BasePage, IDisposable
     public void LoadCorrectly()
     {
         
-        _homePage = new HomePage();
-        _homePage.Verify();
+        Page.Home.Verify();
+        
     }
 
     [Fact]
     public void EnsuretheShoppingPriceAndCheckoutPrice()
     {
-        _homePage = new HomePage();
-        _homePage.SearchAnItemByName("Magic Mouse");
-       _homePage.AddItemToCart();       
+        
+        Page.Home.SearchAnItemByName("Magic Mouse");
+        Page.Home.AddItemToCart();       
        
            }
 

@@ -2,6 +2,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support;
 using System.Collections.Generic;
 
+
 public class CheckOutPage:BaseUtil{
 
 By DisplayedItemPrice = By.CssSelector(".pricedisplay");

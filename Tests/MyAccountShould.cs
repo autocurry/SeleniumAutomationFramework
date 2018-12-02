@@ -18,11 +18,10 @@ public class MyAccountShould : BasePage, IDisposable
     [Fact]
     public void RegisterANewUser()
     {
-        
-        _homePage = new HomePage();
-        _myAccountPage = _homePage.OpenMyAccount();
-        _registerPage = _myAccountPage.SelectRegisterLink();
-        _registerPage.Register();
+       
+         Page.Home.OpenMyAccount();
+         Page.MyAccount.SelectRegisterLink();
+         Page.Register.Register();
 
     }
 

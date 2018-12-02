@@ -16,11 +16,10 @@ public class HomePage:BaseUtil{
 
     
 
-    public MyAccountPage OpenMyAccount()
+    public void OpenMyAccount()
     {
         SingleClick(MyAccountLink);
-        _myAccountPage = new MyAccountPage();
-        return _myAccountPage;
+      
     }
 
     public void Verify()
